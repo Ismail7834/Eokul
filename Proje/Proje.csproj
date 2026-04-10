@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7105CE3-3485-4E82-ABFB-304BF6FDC094}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proje</RootNamespace>
+    <AssemblyName>Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mudurDers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mudurDers.Designer.cs">
+      <DependentUpon>mudurDers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mudurDersProgrami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mudurDersProgrami.Designer.cs">
+      <DependentUpon>mudurDersProgrami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mudurKlub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mudurKlub.Designer.cs">
+      <DependentUpon>mudurKlub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mudurMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mudurMenu.Designer.cs">
+      <DependentUpon>mudurMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mudurOgrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mudurOgrenci.Designer.cs">
+      <DependentUpon>mudurOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mudurOgretmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mudurOgretmen.Designer.cs">
+      <DependentUpon>mudurOgretmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mudurSinif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mudurSinif.Designer.cs">
+      <DependentUpon>mudurSinif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciDersProgrami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciDersProgrami.Designer.cs">
+      <DependentUpon>ogrenciDersProgrami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciGiris.Designer.cs">
+      <DependentUpon>ogrenciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciMenu.Designer.cs">
+      <DependentUpon>ogrenciMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciNot.Designer.cs">
+      <DependentUpon>ogrenciNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenBilgileri.Designer.cs">
+      <DependentUpon>ogretmenBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenDersProgrami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenDersProgrami.Designer.cs">
+      <DependentUpon>ogretmenDersProgrami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenGiris.Designer.cs">
+      <DependentUpon>ogretmenGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenMenu.Designer.cs">
+      <DependentUpon>ogretmenMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenNot.Designer.cs">
+      <DependentUpon>ogretmenNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretmenParola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretmenParola.Designer.cs">
+      <DependentUpon>ogretmenParola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="veriTabaniIslemleri.cs" />
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudurDers.resx">
+      <DependentUpon>mudurDers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudurDersProgrami.resx">
+      <DependentUpon>mudurDersProgrami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudurKlub.resx">
+      <DependentUpon>mudurKlub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudurMenu.resx">
+      <DependentUpon>mudurMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudurOgrenci.resx">
+      <DependentUpon>mudurOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudurOgretmen.resx">
+      <DependentUpon>mudurOgretmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudurSinif.resx">
+      <DependentUpon>mudurSinif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciDersProgrami.resx">
+      <DependentUpon>ogrenciDersProgrami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciGiris.resx">
+      <DependentUpon>ogrenciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciMenu.resx">
+      <DependentUpon>ogrenciMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciNot.resx">
+      <DependentUpon>ogrenciNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenBilgileri.resx">
+      <DependentUpon>ogretmenBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenDersProgrami.resx">
+      <DependentUpon>ogretmenDersProgrami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenGiris.resx">
+      <DependentUpon>ogretmenGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenMenu.resx">
+      <DependentUpon>ogretmenMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenNot.resx">
+      <DependentUpon>ogretmenNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretmenParola.resx">
+      <DependentUpon>ogretmenParola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
